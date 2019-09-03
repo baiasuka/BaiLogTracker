@@ -1,0 +1,24 @@
+import os
+from datetime import timedelta
+
+SECRET_KEY = os.urandom(24)
+PERMANENT_SESSION_LIFETIME = timedelta(hours=2)
+
+DIALECT = 'postgresql'
+DRIVER = 'psycopg2'
+USERNAME = 'postgres'
+PASSWORD = 'password'
+HOST = 'localhost'
+PORT = '5432'
+DATABASE = 'database'
+AUTOCOMMIT = 'true'
+
+# Redis缓存数据库
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_CACHE_DB = 5
+# redis键的默认存活时间
+REDIS_CACHE_EX = 3600
+REDIS_PASSWORD = 'rpassword'
+
+JSON_AS_ASCII = False
