@@ -20,8 +20,4 @@ class FtpCilent:
 
 
 if __name__ == '__main__':
-    with FtpCilent('47.102.106.106', 22, 'root', 'Ang@318Hwj') as cilent:
-        f = cilent.open('/www/HongXiangLogSys/testlog.txt')
-        result = f.readline()
-        print(result)
-        f.close()
+    pass
